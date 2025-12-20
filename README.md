@@ -1,4 +1,4 @@
-Hi 👋, I'm Abhishek Thakur  
+Hi 👋, I'm Abhishek
 
 🚀 Aspiring Full-Stack Web Developer | Python Developer | Machine Learning Engineer  
 💻 Passionate about building scalable apps, solving problems with code, and exploring AI.  
