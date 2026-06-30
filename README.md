@@ -1,4 +1,3 @@
-```md
 <div align="center">
 
 # Hi 👋 I'm Abhishek Thakur
@@ -13,9 +12,9 @@
 
 ### 💫 About Me
 
-💻 Passionate about building scalable apps  
-🚀 Exploring AI & Machine Learning  
-🌱 Learning Advanced Python & System Design  
+💻 Passionate about building scalable apps
+🚀 Exploring AI & Machine Learning
+🌱 Learning Advanced Python & System Design
 ⚡ Building with Django, Flask & Modern Web Tech
 
 ---
@@ -42,9 +41,8 @@
 
 <div align="center">
 
-🌐 Portfolio: https://devabhishek.onrender.com
+🌐 <a href="https://devabhishek.onrender.com">Portfolio</a>
 
-⭐ Code • Build • Learn • Repeat 
+⭐ Code • Build • Learn • Repeat
 
 </div>
-```
