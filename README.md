@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&pause=1000&center=true&vCenter=true&width=650&lines=Full+Stack+Developer;Python+Developer;Machine+Learning+Engineer;Building+Ideas+Into+Reality"/> 
 </div>
 
-<img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&style=for-the-badge&base=1500"/>
+<img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&style=for-the-badge&base=900"/>
 </div>
 
 ---
