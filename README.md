@@ -216,7 +216,7 @@ Vision:
 
 <p align="center">
 
-<img src="https://streak-stats.demolab.com?user=YOUR_USERNAME"/>
+<img src="https://streak-stats.demolab.com?user=1abhishek0948"/>
 
 </p>
 
@@ -226,7 +226,7 @@ Vision:
 
 <p align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME"/>
+<img src="https://github-profile-trophy.vercel.app/?username=1abhishek0948"/>
 
 </p>
 
@@ -263,7 +263,7 @@ Vision:
 <img src="https://skillicons.dev/icons?i=github"/>
 </a>
 
-<a href="https://linkedin.com/in/YOUR_LINK">
+<a href="https://linkedin.com/in/abhishek0948">
 <img src="https://skillicons.dev/icons?i=linkedin"/>
 </a>
 
