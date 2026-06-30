@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=650&lines=🚀+Full+Stack+Developer;🐍+Python+Developer;🤖+Machine+Learning+Engineer;💡+Building+Ideas+Into+Reality"/>
 
-<img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=100+Profile+Views&style=for-the-badge"/>
+<img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&style=100+for-the-badge"/>
 
 </div>
 
