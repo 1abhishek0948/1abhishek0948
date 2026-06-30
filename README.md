@@ -29,15 +29,6 @@
 
 ---
 
-### 📊 GitHub Analytics
-
-<p align="center">
-
-
-<img height="165em" src="https://streak-stats.demolab.com?user=1abhishek0948&theme=tokyonight&cache_seconds=1"/>
-
-</p>
----
 
 <div align="center">
 
