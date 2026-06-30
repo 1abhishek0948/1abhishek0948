@@ -1,11 +1,16 @@
+```html
 <div align="center">
 
 # Hi 👋 I'm Abhishek Thakur
 
+<img src="https://github.com/1abhishek0948.png" width="180"/>
+
 <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=650&lines=🚀+Full+Stack+Developer;🐍+Python+Developer;🤖+Machine+Learning+Engineer;💡+Building+Ideas+Into+Reality"/>
 
 <img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&style=for-the-badge&base=1500"/>
+
 </div>
+```
 
 ---
 
