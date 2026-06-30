@@ -33,24 +33,16 @@
 
 <p align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=1abhishek0948&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=1"/>
 
 <img height="165em" src="https://streak-stats.demolab.com?user=1abhishek0948&theme=tokyonight&cache_seconds=1"/>
 
 </p>
-
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=1abhishek0948&theme=tokyo-night&cache_seconds=1"/>
-
-</p>
-
 ---
 
 <div align="center">
 
 🌐 <a href="https://devabhishek.onrender.com">Portfolio</a>
 
-⭐ Code • Build • Learn • Repeat
+⭐ Code • Build • Learn • Repeat 
 
 </div>
