@@ -32,7 +32,7 @@
 
 <div align="center">
 
-🌐 <a href="www.abhishek-thakur.com.np">Portfolio</a>
+🌐 <a href="https://www.abhishek-thakur.com.np/">Portfolio</a>
 
 ⭐ Code • Build • Learn • Repeat 
 
