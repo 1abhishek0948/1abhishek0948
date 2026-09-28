@@ -25,12 +25,13 @@ async function heroDataUri() {
     if (!FMT) FMT = (await sharp(IMAGE).metadata()).hasAlpha ? 'webp' : 'jpeg';
     const buf = await sharp(IMAGE).resize({ width: 1600, withoutEnlargement: true })[FMT === 'jpeg' ? 'jpeg' : 'webp']({ quality: 82 }).toBuffer();
     console.log(`hero image: ${path.basename(IMAGE)} embedded (${(buf.length / 1024).toFixed(0)} KB)`);
-    return `data:image/${FMT === 'jpeg' ? 'jpeg' : 'webp'};base64,${buf.toString('base64')}`;
+    const m = await sharp(buf).metadata();
+    return { uri: `data:image/${FMT === 'jpeg' ? 'jpeg' : 'webp'};base64,${buf.toString('base64')}`, ratio: m.height / m.width };
   }
   console.warn(`\n!! "${IMAGE}" not found. Building a PLACEHOLDER hero.\n!! Put "image copy.png" in the repo root and run "npm run build" again.\n`);
   const ph = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1440"/><stop offset="1" stop-color="#0b2a33"/></linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/><text x="800" y="470" text-anchor="middle" font-family="sans-serif" font-size="44" fill="#8A90A8">image copy.png goes here</text></svg>`;
   const buf = await sharp(Buffer.from(ph)).jpeg({ quality: 70 }).toBuffer();
-  return `data:image/jpeg;base64,${buf.toString('base64')}`;
+  return { uri: `data:image/jpeg;base64,${buf.toString('base64')}`, ratio: 0.5625 };
 }
 
 const write = (name, el) => {
@@ -40,7 +41,8 @@ const write = (name, el) => {
 };
 
 (async () => {
-  write('hero.svg', <Hero img={await heroDataUri()} />);
+  const hd = await heroDataUri();
+  write('hero.svg', <Hero img={hd.uri} ratio={hd.ratio} />);
   write('title.svg', <Title />);
   write('intro.svg', <Intro />);
   write('badges.svg', <Badges />);
