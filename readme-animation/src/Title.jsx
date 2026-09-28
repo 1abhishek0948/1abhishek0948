@@ -10,7 +10,7 @@ export function Title() {
 .gp{animation:gp 5s ease-in-out infinite alternate}
 @keyframes gp{from{opacity:.18}to{opacity:.5}}`;
   return (
-    <Svg w={W} h={H} title="Abhishek Sharma, Full Stack Developer" css={css}>
+    <Svg w={W} h={H} title="Abhishek Thakur, Full Stack Developer" css={css}>
       <defs>
         <filter id="tblur" x="-10%" y="-30%" width="120%" height="160%">
           <feGaussianBlur stdDeviation="0"><animate attributeName="stdDeviation" values="18;0;0;18" keyTimes="0;.09;.92;1" dur="14s" repeatCount="indefinite" /></feGaussianBlur>
@@ -18,9 +18,9 @@ export function Title() {
         <clipPath id="tc"><rect x={rx} y="172" width={rw} height="44"><animate attributeName="width" values={`0;0;${rw};${rw};0`} keyTimes="0;.1;.3;.92;1" dur="14s" repeatCount="indefinite" /></rect></clipPath>
       </defs>
       <Backdrop w={W} h={H} seed={5} stars={30} />
-      <text className="nm gp" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gv)" filter="url(#blur14)">Abhishek Sharma</text>
+      <text className="nm gp" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gv)" filter="url(#blur14)">Abhishek Thakur</text>
       <g filter="url(#tblur)">
-        <text className="nm" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gtext)"><Chars text="Abhishek Sharma" step={0.06} /></text>
+        <text className="nm" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gtext)"><Chars text="Abhishek Thakur" step={0.06} /></text>
       </g>
       <path d="M420 152H780" stroke="url(#gh)" strokeWidth="2" strokeLinecap="round" pathLength="1" strokeDasharray="1" strokeDashoffset="0" filter="url(#glow)">
         <animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0;.08;.2;.92;1" dur="14s" repeatCount="indefinite" />
