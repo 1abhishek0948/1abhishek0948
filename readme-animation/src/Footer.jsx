@@ -9,7 +9,7 @@ function wave(amp, y, period, phase) {
 export function Footer() {
   const W = 1200, H = 270;
   return (
-    <Svg w={W} h={H} title="Abhishek Sharma, Full Stack Developer, Nepal">
+    <Svg w={W} h={H} title="Abhishek Thakur, Full Stack Developer, Nepal">
       <Backdrop w={W} h={H} seed={61} stars={44} />
       <defs>
         <clipPath id="fc"><rect width={W} height={H} rx="24" /></clipPath>
@@ -24,8 +24,8 @@ export function Footer() {
         ))}
       </g>
       <g className="float" style={{ animationDuration: '8s' }}>
-        <text x="600" y="102" textAnchor="middle" fontSize="50" fontWeight="700" fill="url(#gv)" opacity=".4" filter="url(#blur14)">Abhishek Sharma</text>
-        <text x="600" y="102" textAnchor="middle" fontSize="50" fontWeight="700" fill="url(#gtext)">Abhishek Sharma</text>
+        <text x="600" y="102" textAnchor="middle" fontSize="50" fontWeight="700" fill="url(#gv)" opacity=".4" filter="url(#blur14)">Abhishek Thakur</text>
+        <text x="600" y="102" textAnchor="middle" fontSize="50" fontWeight="700" fill="url(#gtext)">Abhishek Thakur</text>
         <g className="enter" style={delay(0.6)}>
           <text x="600" y="142" textAnchor="middle" fontSize="18" fill={C.text} fillOpacity=".75">Full Stack Developer from Nepal</text>
           <text x="600" y="172" textAnchor="middle" fontSize="14" fill={C.mute}>Animations in this page are React, CSS and SVG, exported as static assets.</text>
