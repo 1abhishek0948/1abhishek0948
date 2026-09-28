@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src="assets/readme/hero.svg" alt="Abhishek Thakur, Full Stack Developer" width="100%">
-<img src="assets/readme/title.svg" alt="Abhishek Thakur, Full Stack Developer / Web Developer" width="100%">
+<img src="assets/readme/title.svg" alt="Abhishek Thakur, Code. Build. Refine. Repeat." width="100%">
 <img src="assets/readme/intro.svg" alt="Modern Full Stack Developer specializing in Python, Django, React, PostgreSQL and modern web development. B.Tech in Computer Science and Engineering, Parul University, Vadodara (2022-2026). Based in Nepal." width="100%">
 <img src="assets/readme/badges.svg" alt="Python, Django, Flask, React, JavaScript, PostgreSQL, Docker, REST APIs, SEO" width="100%">
 

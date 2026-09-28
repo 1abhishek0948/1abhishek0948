@@ -2,7 +2,7 @@ import { Svg, Backdrop, Chars, C, MONO } from './lib.jsx';
 
 export function Title() {
   const W = 1200, H = 250;
-  const role = 'Full Stack Developer  /  Web Developer';
+  const role = 'Code. Build. Refine. Repeat.';
   const rw = role.length * 14.4, rx = 600 - rw / 2;
   const css = `
 .nm{animation:ls 14s ease infinite}
@@ -18,9 +18,9 @@ export function Title() {
         <clipPath id="tc"><rect x={rx} y="172" width={rw} height="44"><animate attributeName="width" values={`0;0;${rw};${rw};0`} keyTimes="0;.1;.3;.92;1" dur="14s" repeatCount="indefinite" /></rect></clipPath>
       </defs>
       <Backdrop w={W} h={H} seed={5} stars={30} />
-      <text className="nm gp" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gv)" filter="url(#blur14)">Abhishek Thakur</text>
+      <text className="nm gp" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="#F8F3EE" filter="url(#blur14)">Abhishek Thakur</text>
       <g filter="url(#tblur)">
-        <text className="nm" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="url(#gtext)"><Chars text="Abhishek Thakur" step={0.06} /></text>
+        <text className="nm" x="600" y="125" textAnchor="middle" fontSize="92" fontWeight="700" fill="#F8F3EE" filter="url(#glow)"><Chars text="Abhishek Thakur" step={0.06} /></text>
       </g>
       <path d="M420 152H780" stroke="url(#gh)" strokeWidth="2" strokeLinecap="round" pathLength="1" strokeDasharray="1" strokeDashoffset="0" filter="url(#glow)">
         <animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0;.08;.2;.92;1" dur="14s" repeatCount="indefinite" />
