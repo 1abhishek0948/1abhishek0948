@@ -47,8 +47,8 @@ const write = (name, el) => {
   write('intro.svg', <Intro />);
   write('badges.svg', <Badges />);
   write('btn-portfolio.svg', <Button label="Portfolio" w={200} i={0} />);
-  write('btn-developer.svg', <Button label="Developer portfolio" w={250} primary={false} i={1} />);
-  write('btn-github.svg', <Button label="GitHub" w={200} primary={false} i={2} />);
+  write('btn-developer.svg', <Button label="LinkedIn" w={150} primary={false} i={1} />);
+  write('btn-github.svg', <Button label="Instagram" w={160} primary={false} i={2} />);
   write('btn-neptwone.svg', <Button label="Neptwone demo" w={210} primary={false} i={0} />);
   write('btn-aiwebdoctor.svg', <Button label="AI Web Doctor" w={210} primary={false} i={1} />);
   write('btn-lafzloom.svg', <Button label="Lafzloom" w={190} primary={false} i={2} />);
