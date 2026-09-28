@@ -1,6 +1,6 @@
 import { Svg, Backdrop, Particles, C, MONO } from './lib.jsx';
 
-const LINES = ['https://abhishek-thakur.com.np', 'https://devabhishek.onrender.com', 'https://github.com/1abhishek0948'];
+const LINES = ['https://abhishek-thakur.com.np', 'https://www.linkedin.com/in/abhishek0948/', 'https://github.com/1abhishek0948'];
 const CW = 12.2;
 
 export function Quickstart() {
