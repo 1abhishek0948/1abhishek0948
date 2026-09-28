@@ -7,9 +7,9 @@ export function Hero({ img, ratio = 0.5625 }) {
   const W = 1200, H = Math.min(900, Math.round(W * ratio)), r = 24;
   // Bottom link row: flush with the bottom edge (zero margin), centered, clipped by #hc.
   const btns = [
-    { label: 'Portfolio', href: 'https://abhishek-thakur.com.np', w: 150 },
+    { label: 'Portfolio', href: 'https://www.abhishek-thakur.com.np/', w: 150 },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/abhishek0948/', w: 140 },
-    { label: 'GitHub', href: 'https://github.com/1abhishek0948', w: 130 },
+    { label: 'Instagram', href: 'https://www.instagram.com/1abhishek0948/', w: 155 },
   ];
   const gap = 16, bh = 52, by = H - bh;
   const totalW = btns.reduce((s, b) => s + b.w, 0) + gap * (btns.length - 1);
