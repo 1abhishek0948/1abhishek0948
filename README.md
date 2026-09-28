@@ -1,43 +1,34 @@
-<!-- <div align="center">
-
-# Hi 👋 I'm Abhishek Thakur
-
-<div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&pause=1000&center=true&vCenter=true&width=650&lines=Full+Stack+Developer;Python+Developer;Machine+Learning+Engineer;Building+Ideas+Into+Reality"/>
-</div>
-
-<img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&style=for-the-badge&base=5000"/>
-
-</div>
-
----
-
-### 💫 About Me
-
-💻 Passionate about building scalable apps  
-🚀 Exploring AI & Machine Learning  
-🌱 Learning Advanced Python & System Design  
-⚡ Building with Django, Flask & Modern Web Tech  
-
----
-
-### 🛠 Tech Stack
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=python,django,flask,js,react,postgres,mongodb,git,github,vscode"/>
-</p>
-
----
-
-
 <div align="center">
 
-🌐 <a href="https://www.abhishek-thakur.com.np/">Portfolio</a>
+<img src="assets/readme/hero.svg" alt="Abhishek Sharma, Full Stack Developer" width="100%">
+<img src="assets/readme/title.svg" alt="Abhishek Sharma, Full Stack Developer / Web Developer" width="100%">
+<img src="assets/readme/intro.svg" alt="Modern Full Stack Developer specializing in Python, Django, React, PostgreSQL and modern web development. B.Tech in Computer Science and Engineering, Parul University, Vadodara (2022-2026). Based in Nepal." width="100%">
+<img src="assets/readme/badges.svg" alt="Python, Django, Flask, React, JavaScript, PostgreSQL, Docker, REST APIs, SEO" width="100%">
 
-⭐ Code • Build • Learn • Repeat 
+<a href="https://abhishek-thakur.com.np"><img src="assets/readme/btn-portfolio.svg" alt="Portfolio" height="64"></a>
+<a href="https://devabhishek.onrender.com"><img src="assets/readme/btn-developer.svg" alt="Developer portfolio" height="64"></a>
+<a href="https://github.com/1abhishek0948"><img src="assets/readme/btn-github.svg" alt="GitHub" height="64"></a>
 
-</div> -->
+<br>
 
+<img src="assets/readme/heading-projects.svg" alt="What I build" width="100%">
+<img src="assets/readme/features.svg" alt="LAHAN Hub, NepTown, Neptwone, AI Web Doctor, Lafzloom, and website management with SEO" width="100%">
 
+<a href="https://neptwone.onrender.com/"><img src="assets/readme/btn-neptwone.svg" alt="Neptwone live demo" height="64"></a>
+<a href="https://ai-web-doctor.onrender.com/"><img src="assets/readme/btn-aiwebdoctor.svg" alt="AI Web Doctor live demo" height="64"></a>
+<a href="https://lafzloom.onrender.com/"><img src="assets/readme/btn-lafzloom.svg" alt="Lafzloom live demo" height="64"></a>
 
+<br>
 
+<img src="assets/readme/heading-stack.svg" alt="Tech stack" width="100%">
+<img src="assets/readme/tech-stack.svg" alt="HTML, CSS, JavaScript, React, Python, Django, Flask, PostgreSQL, Docker, Git and GitHub" width="100%">
+
+<img src="assets/readme/heading-architecture.svg" alt="How my projects fit together" width="100%">
+<img src="assets/readme/architecture.svg" alt="User to Frontend to API to Backend to Database, with responses flowing back to the user" width="100%">
+
+<img src="assets/readme/heading-start.svg" alt="Get in touch" width="100%">
+<img src="assets/readme/quickstart.svg" alt="open https://abhishek-thakur.com.np, https://devabhishek.onrender.com, https://github.com/1abhishek0948" width="100%">
+
+<img src="assets/readme/footer.svg" alt="Abhishek Sharma, Full Stack Developer from Nepal" width="100%">
+
+</div>
