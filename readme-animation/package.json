@@ -1,0 +1,17 @@
+{
+  "name": "readme-animation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "React + CSS + SVG source for the animated GitHub profile README",
+  "scripts": {
+    "build": "esbuild scripts/export.jsx --bundle --platform=node --format=cjs --jsx=automatic --external:sharp --outfile=.build/export.cjs && node .build/export.cjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "sharp": "^0.33.5"
+  }
+}
