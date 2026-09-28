@@ -9,7 +9,7 @@ export function Quickstart() {
     <Svg w={W} h={H} title="Get in touch: open the portfolio, developer portfolio and GitHub profile">
       <defs>
         <clipPath id="qc"><rect x={x} y={y} width={w} height={h} rx="18" /></clipPath>
-        <linearGradient id="qtop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor={C.aqua} stopOpacity="0" /><stop offset=".5" stopColor="#fff" /><stop offset="1" stopColor={C.violet} stopOpacity="0" /></linearGradient>
+        <linearGradient id="qtop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor={C.aqua} stopOpacity="0" /><stop offset=".5" stopColor="#F8F3EE" /><stop offset="1" stopColor={C.violet} stopOpacity="0" /></linearGradient>
         <linearGradient id="qscan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={C.aqua} stopOpacity="0" /><stop offset="1" stopColor={C.aqua} stopOpacity=".12" /></linearGradient>
         {LINES.map((l, i) => {
           const s = 0.12 + i * 0.2, e = s + 0.12, tw = (l.length + 7) * CW;
@@ -24,16 +24,16 @@ export function Quickstart() {
         <rect y={y} width="260" height="2.5" fill="url(#qtop)"><animate attributeName="x" values={`${x - 260};${x + w}`} dur="4.5s" repeatCount="indefinite" /></rect>
         <rect x={x} width={w} height="60" fill="url(#qscan)"><animate attributeName="y" values={`${y - 60};${y + h}`} dur="5.5s" repeatCount="indefinite" /></rect>
       </g>
-      <path d={`M${x} ${y + 44}H${x + w}`} stroke="#fff" strokeOpacity=".08" />
-      {[0, 1, 2].map((k) => <circle key={k} cx={x + 28 + k * 20} cy={y + 22} r="5" fill="#fff" opacity=".18" />)}
+      <path d={`M${x} ${y + 44}H${x + w}`} stroke="#F8F3EE" strokeOpacity=".08" />
+      {[0, 1, 2].map((k) => <circle key={k} cx={x + 28 + k * 20} cy={y + 22} r="5" fill="#F8F3EE" opacity=".18" />)}
       <text className="mono" x={x + w / 2} y={y + 27} textAnchor="middle" fontSize="13" fill={C.mute}>get-in-touch</text>
       {LINES.map((l, i) => {
         const ty = y + 101 + i * 50, tx = x + 40;
         return (
           <g key={l} clipPath={`url(#ql${i})`} fontSize="20">
-            <text className="mono" x={tx} y={ty} fill={C.aqua} textLength={CW}>$</text>
+            <text className="mono" x={tx} y={ty} fill={C.violet} textLength={CW}>$</text>
             <text className="mono" x={tx + 2 * CW} y={ty} fill={C.text} textLength={4 * CW}>open</text>
-            <text className="mono" x={tx + 7 * CW} y={ty} fill={C.violet} textLength={l.length * CW}>{l}</text>
+            <text className="mono" x={tx + 7 * CW} y={ty} fill={C.aqua} textLength={l.length * CW}>{l}</text>
           </g>
         );
       })}

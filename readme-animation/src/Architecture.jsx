@@ -12,7 +12,7 @@ export function Architecture() {
       {/* return path */}
       <use href="#retp" fill="none" stroke="url(#gh)" strokeWidth="1.6" strokeDasharray="4 10" opacity=".5" className="flow" />
       {[0, 1, 2, 3].map((k) => (
-        <circle key={k} r="3.5" fill={C.rose} filter="url(#glow)">
+        <circle key={k} r="3.5" fill={C.violet} filter="url(#glow)">
           <animateMotion dur="7s" begin={`${k * 1.75}s`} repeatCount="indefinite"><mpath href="#retp" /></animateMotion>
         </circle>
       ))}
@@ -25,7 +25,7 @@ export function Architecture() {
             <path d={`M${a} ${cy}H${b}`} stroke="url(#gh)" strokeWidth="2" strokeDasharray="6 8" className="flow" />
             <path d={`M${b - 8} ${cy - 6}L${b} ${cy}L${b - 8} ${cy + 6}`} fill="none" stroke={C.aqua} strokeWidth="2" strokeLinecap="round" />
             {[0, 1, 2].map((k) => (
-              <circle key={k} r="3.2" cy={cy} fill="#fff" filter="url(#glow)">
+              <circle key={k} r="3.2" cy={cy} fill="#F8F3EE" filter="url(#glow)">
                 <animate attributeName="cx" values={`${a};${b}`} dur="2.4s" begin={`${k * 0.8 + i * 0.3}s`} repeatCount="indefinite" />
                 <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.4s" begin={`${k * 0.8 + i * 0.3}s`} repeatCount="indefinite" />
               </circle>

@@ -1,4 +1,4 @@
-export const C = { bg:'#06070C', panel:'#0E1120', line:'#262B45', text:'#EAEDF7', mute:'#9AA1B8', violet:'#8B7BFF', aqua:'#4DE1D2', rose:'#FF7AB6' };
+export const C = { bg:'#090708', panel:'#171012', line:'#2A1C20', text:'#F8F3EE', mute:'#A99C97', violet:'#C04A62', aqua:'#C6A46A', rose:'#7B1E2B', goldLight:'#E6CB94' };
 export const FONT = "Inter, 'SF Pro Display', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
 export const MONO = "'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace";
 export const CYCLE = 14; // seconds; every entrance replays each cycle so late scrollers still see it
@@ -46,7 +46,7 @@ export function Svg({ w, h, title, css = '', children }) {
         <linearGradient id="gv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor={C.violet} /><stop offset="1" stopColor={C.aqua} /></linearGradient>
         <linearGradient id="gh" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0"><stop offset="0" stopColor={C.violet} /><stop offset=".5" stopColor={C.aqua} /><stop offset="1" stopColor={C.rose} /></linearGradient>
         <linearGradient id="gtext" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="reflect">
-          <stop offset="0" stopColor="#FFFFFF" /><stop offset=".3" stopColor={C.violet} /><stop offset=".65" stopColor={C.aqua} /><stop offset="1" stopColor="#FFFFFF" />
+          <stop offset="0" stopColor="#F8F3EE" /><stop offset=".3" stopColor={C.aqua} /><stop offset=".65" stopColor={C.goldLight} /><stop offset="1" stopColor="#F8F3EE" />
           <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="9s" repeatCount="indefinite" />
         </linearGradient>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
@@ -69,28 +69,28 @@ export function Backdrop({ w, h, seed = 1, stars = 40, r = 24, blobs = true }) {
       <defs>
         <clipPath id="bdc"><rect width={w} height={h} rx={r} /></clipPath>
         <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
-          <path d="M56 0H0V56" fill="none" stroke="#fff" strokeOpacity=".05" />
+          <path d="M56 0H0V56" fill="none" stroke="#F8F3EE" strokeOpacity=".05" />
           <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="56 56" dur="14s" repeatCount="indefinite" />
         </pattern>
-        <radialGradient id="spot"><stop offset="0" stopColor="#fff" stopOpacity=".14" /><stop offset="1" stopColor="#fff" stopOpacity="0" /></radialGradient>
+        <radialGradient id="spot"><stop offset="0" stopColor="#F8F3EE" stopOpacity=".14" /><stop offset="1" stopColor="#F8F3EE" stopOpacity="0" /></radialGradient>
       </defs>
       <rect width={w} height={h} rx={r} fill={C.bg} />
       <g clipPath="url(#bdc)">
         {blobs && (
           <g filter="url(#blur40)" opacity=".5">
-            <circle className="b1" cx={w * 0.18} cy={h * 0.3} r={h * 0.45} fill={C.violet} />
+            <circle className="b1" cx={w * 0.18} cy={h * 0.3} r={h * 0.45} fill={C.rose} />
             <circle className="b2" cx={w * 0.82} cy={h * 0.72} r={h * 0.4} fill={C.aqua} opacity=".6" />
-            <circle className="b3" cx={w * 0.55} cy={h * 0.15} r={h * 0.26} fill={C.rose} opacity=".45" />
+            <circle className="b3" cx={w * 0.55} cy={h * 0.15} r={h * 0.26} fill={C.violet} opacity=".45" />
           </g>
         )}
         <rect width={w} height={h} fill="url(#grid)" />
         <ellipse cy={h * 0.4} rx={w * 0.32} ry={h * 0.7} fill="url(#spot)">
           <animate attributeName="cx" values={`${w * 0.2};${w * 0.8};${w * 0.2}`} dur="20s" repeatCount="indefinite" />
         </ellipse>
-        {S.map((s, i) => <circle key={i} className="tw" cx={s.x} cy={s.y} r={s.r} fill="#fff" style={{ animationDelay: `${s.d}s`, animationDuration: `${s.t}s` }} />)}
+        {S.map((s, i) => <circle key={i} className="tw" cx={s.x} cy={s.y} r={s.r} fill="#F8F3EE" style={{ animationDelay: `${s.d}s`, animationDuration: `${s.t}s` }} />)}
         <rect width={w} height={h} filter="url(#grain)" opacity=".06" />
       </g>
-      <rect x=".5" y=".5" width={w - 1} height={h - 1} rx={r} fill="none" stroke="#fff" strokeOpacity=".1" />
+      <rect x=".5" y=".5" width={w - 1} height={h - 1} rx={r} fill="none" stroke="#F8F3EE" strokeOpacity=".1" />
     </g>
   );
 }

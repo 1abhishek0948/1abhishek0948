@@ -22,8 +22,8 @@ export function Hero({ img, ratio = 0.5625 }) {
           </feGaussianBlur>
         </filter>
         <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1"><stop offset=".7" stopColor={C.bg} stopOpacity="0" /><stop offset="1" stopColor={C.bg} stopOpacity=".45" /></linearGradient>
-        <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#fff" stopOpacity="0" /><stop offset=".5" stopColor="#fff" stopOpacity=".2" /><stop offset="1" stopColor="#fff" stopOpacity="0" /></linearGradient>
-        <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2={W} y2={H}><stop offset="0" stopColor={C.violet} /><stop offset=".5" stopColor="#fff" /><stop offset="1" stopColor={C.aqua} /></linearGradient>
+        <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#F8F3EE" stopOpacity="0" /><stop offset=".5" stopColor="#F8F3EE" stopOpacity=".2" /><stop offset="1" stopColor="#F8F3EE" stopOpacity="0" /></linearGradient>
+        <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2={W} y2={H}><stop offset="0" stopColor={C.violet} /><stop offset=".5" stopColor="#F8F3EE" /><stop offset="1" stopColor={C.aqua} /></linearGradient>
       </defs>
       <rect width={W} height={H} rx={r} fill={C.bg} />
       <g clipPath="url(#hc)">
@@ -37,7 +37,7 @@ export function Hero({ img, ratio = 0.5625 }) {
         </rect>
         <Particles w={W} h={H} n={22} seed={11} />
       </g>
-      <rect x="1" y="1" width={W - 2} height={H - 2} rx={r} fill="none" stroke="#fff" strokeOpacity=".14" />
+      <rect x="1" y="1" width={W - 2} height={H - 2} rx={r} fill="none" stroke="#F8F3EE" strokeOpacity=".14" />
       <rect className="beam" x="1.5" y="1.5" width={W - 3} height={H - 3} rx={r} fill="none" stroke="url(#beam)" strokeWidth="2.5" pathLength="1000" strokeDasharray="90 910" filter="url(#glow)" />
     </Svg>
   );

@@ -29,7 +29,7 @@ async function heroDataUri() {
     return { uri: `data:image/${FMT === 'jpeg' ? 'jpeg' : 'webp'};base64,${buf.toString('base64')}`, ratio: m.height / m.width };
   }
   console.warn(`\n!! "${IMAGE}" not found. Building a PLACEHOLDER hero.\n!! Put "image copy.png" in the repo root and run "npm run build" again.\n`);
-  const ph = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1440"/><stop offset="1" stop-color="#0b2a33"/></linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/><text x="800" y="470" text-anchor="middle" font-family="sans-serif" font-size="44" fill="#8A90A8">image copy.png goes here</text></svg>`;
+  const ph = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a0f16"/><stop offset="1" stop-color="#171012"/></linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/><text x="800" y="470" text-anchor="middle" font-family="sans-serif" font-size="44" fill="#8A90A8">image copy.png goes here</text></svg>`;
   const buf = await sharp(Buffer.from(ph)).jpeg({ quality: 70 }).toBuffer();
   return { uri: `data:image/jpeg;base64,${buf.toString('base64')}`, ratio: 0.5625 };
 }

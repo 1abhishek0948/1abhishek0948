@@ -34,7 +34,7 @@ export function TechStack() {
       ))}
       {GROUPS.map(([g, a, b]) => (
         <g key={g}>
-          <path d={`M${px(a) - 38} 250H${px(b) + 38}`} stroke="#fff" strokeOpacity=".18" strokeWidth="1.5" />
+          <path d={`M${px(a) - 38} 250H${px(b) + 38}`} stroke="#F8F3EE" strokeOpacity=".18" strokeWidth="1.5" />
           <text x={(px(a) + px(b)) / 2} y="278" textAnchor="middle" fontSize="14" fill={C.text} fillOpacity=".7">{g}</text>
         </g>
       ))}

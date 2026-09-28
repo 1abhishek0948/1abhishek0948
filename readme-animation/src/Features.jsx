@@ -32,13 +32,13 @@ export function Features() {
             <clipPath id={`cc${i}`}><rect width={cw} height={ch} rx="20" /></clipPath>
             <g className="enter" style={delay(d)}>
               <g className="float" style={{ animationDuration: `${dur}s`, animationDelay: `${-i}s` }}>
-                <rect width={cw} height={ch} rx="20" fill="#fff" fillOpacity=".04" />
+                <rect width={cw} height={ch} rx="20" fill="#F8F3EE" fillOpacity=".04" />
                 <g clipPath={`url(#cc${i})`}>
-                  <rect y="-20" width="90" height={ch + 40} fill="#fff" opacity=".07" transform="skewX(-20)">
+                  <rect y="-20" width="90" height={ch + 40} fill="#F8F3EE" opacity=".07" transform="skewX(-20)">
                     <animate attributeName="x" values={`-160;${cw + 120};${cw + 120}`} keyTimes="0;.35;1" dur={`${7 + i * 0.6}s`} begin={`${i * 0.8}s`} repeatCount="indefinite" />
                   </rect>
                 </g>
-                <rect width={cw} height={ch} rx="20" fill="none" stroke="#fff" strokeOpacity=".1" />
+                <rect width={cw} height={ch} rx="20" fill="none" stroke="#F8F3EE" strokeOpacity=".1" />
                 <rect className="beam" width={cw} height={ch} rx="20" fill="none" stroke="url(#gv)" strokeWidth="2" pathLength="1000" strokeDasharray="110 890" filter="url(#glow)" style={{ animationDuration: `${6 + i * 0.7}s` }} />
                 <g transform="translate(28 26)"><Icon k={c.k} /></g>
                 <text x="90" y="58" fontSize="22" fontWeight="650" fill={C.text}>{c.t}</text>
