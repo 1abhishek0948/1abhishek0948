@@ -13,10 +13,6 @@
 <img src="assets/readme/heading-projects.svg" alt="What I build" width="100%">
 <img src="assets/readme/features.svg" alt="LAHAN Hub, NepTown, Neptwone, AI Web Doctor, Lafzloom, and website management with SEO" width="100%">
 
-<a href="https://neptwone.onrender.com/"><img src="assets/readme/btn-neptwone.svg" alt="Neptwone live demo" height="64"></a>
-<a href="https://ai-web-doctor.onrender.com/"><img src="assets/readme/btn-aiwebdoctor.svg" alt="AI Web Doctor live demo" height="64"></a>
-<a href="https://lafzloom.onrender.com/"><img src="assets/readme/btn-lafzloom.svg" alt="Lafzloom live demo" height="64"></a>
-
 <br>
 
 <img src="assets/readme/heading-stack.svg" alt="Tech stack" width="100%">
