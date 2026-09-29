@@ -3,7 +3,7 @@
 <img src="assets/readme/hero.svg" alt="Abhishek Thakur, Full Stack Developer" width="100%">
 <img src="assets/readme/title.svg" alt="Abhishek Thakur, Code. Build. Refine. Repeat." width="100%">
 <a href="https://abhishek-thakur.com.np"><img src="assets/readme/btn-portfolio.svg" alt="Portfolio" height="64"></a>
-<a href="https://github.com/1abhishek0948"><img src="https://komarev.com/ghpvc/?username=1abhishek0948&label=Profile+Views&color=C6A46A&style=for-the-badge" alt="Profile Views" height="28" style="vertical-align:middle"></a>
+<a href="https://github.com/1abhishek0948"><img src="assets/readme/btn-profile-views.svg" alt="5.1k Profile Views" height="64"></a>
 <a href="https://www.linkedin.com/in/abhishek0948/"><img src="assets/readme/btn-developer.svg" alt="LinkedIn" height="64"></a>
 <a href="https://www.instagram.com/1abhishek0948/"><img src="assets/readme/btn-github.svg" alt="Instagram" height="64"></a>
 <img src="assets/readme/intro.svg" alt="Modern Full Stack Developer specializing in Python, Django, React, PostgreSQL and modern web development. B.Tech in Computer Science and Engineering, Parul University, Vadodara (2022-2026). Based in Nepal." width="100%">

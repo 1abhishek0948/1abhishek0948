@@ -19,7 +19,7 @@ readme-animation/src/*.jsx
 readme-animation/scripts/export.jsx  (React SSR + sharp)
         |
         v
-assets/readme/*.svg  (19 files, committed to git)
+assets/readme/*.svg  (20 files, committed to git)
         |
         v
 README.md  (<img src="assets/readme/...">)
@@ -29,7 +29,7 @@ https://github.com/1abhishek0948  (profile page)
 ```
 
 * No dev server, no backend, no database.
-* `README.md` = 29 lines of `<div><img><a>` tags only.
+* `README.md` = 30 lines of `<div><img><a>` tags only.
 * Animations are CSS keyframes + SVG `<animate>` / `<animateTransform>` / `<animateMotion>` inside each SVG, so they play inside GitHub's `<img>` renderer.
 * GitHub `<img>` SVGs **cannot load external files**, so everything (hero photo, tech icons) is **inlined/base64-embedded** at build time.
 
@@ -43,12 +43,13 @@ https://github.com/1abhishek0948  (profile page)
   setup.md                   # this file
   image copy.png             # hero photo source (note the space in filename)
   assets/
-    readme/                  # BUILD OUTPUT — 19 SVGs, must be committed
+    readme/                  # BUILD OUTPUT — 20 SVGs, must be committed
       hero.svg
       title.svg
       intro.svg
       badges.svg
       btn-portfolio.svg
+      btn-profile-views.svg
       btn-developer.svg
       btn-github.svg
       btn-neptwone.svg
@@ -129,7 +130,7 @@ open ../assets/readme/hero.svg
 open ../README.md
 ```
 
-If you see 19 lines like `hero.svg  XXX.X KB`, the build worked.
+If you see 20 lines like `hero.svg  XXX.X KB`, the build worked.
 
 Commit + push to update your live profile:
 
@@ -194,7 +195,7 @@ Notes:
 
 ---
 
-## 7. Output catalog — 19 SVGs
+## 7. Output catalog — 20 SVGs
 
 | File | Source | Size | What it is |
 |------|--------|------|------------|
@@ -203,6 +204,7 @@ Notes:
 | `intro.svg` | `Intro.jsx` | 1200×270 | Bio: Modern Full Stack Developer... Parul University... Nepal |
 | `badges.svg` | `Badges.jsx` | 1200×120 | 9 pills: Python Django Flask React JS PostgreSQL Docker REST SEO |
 | `btn-portfolio.svg` | `Buttons.jsx` | 260×100 | Gold primary CTA `Portfolio` |
+| `btn-profile-views.svg` | `Buttons.jsx` | 320×100 | Outline CTA `5.1k Profile Views` → github profile |
 | `btn-developer.svg` | `Buttons.jsx` | 210×100 | Outline CTA `LinkedIn` |
 | `btn-github.svg` | `Buttons.jsx` | 220×100 | Outline CTA `Instagram` |
 | `btn-neptwone.svg` | `Buttons.jsx` | 270×100 | Generated but **not embedded** in current README |
@@ -218,7 +220,7 @@ Notes:
 | `quickstart.svg` | `Quickstart.jsx` | 1200×310 | Terminal box with 3 `open <url>` lines |
 | `footer.svg` | `Footer.jsx` | 1200×270 | Animated waves + name + `Full Stack Developer from Nepal` |
 
-`README.md` embed order: hero → title → 3 buttons → intro → badges → heading-projects → features → heading-stack → tech-stack → heading-architecture → architecture → heading-start → quickstart → footer.
+`README.md` embed order: hero → title → 4 buttons → intro → badges → heading-projects → features → heading-stack → tech-stack → heading-architecture → architecture → heading-start → quickstart → footer.
 
 ---
 
@@ -252,14 +254,15 @@ const VARIANT = 'dark'; // 'dark' | 'light' | 'grayscale'
 
 Names must exist in https://www.tech-stack-icons.com or build throws `tech-stack-icons has no icon called "..."`.
 
-**Buttons** — `src/Buttons.jsx` + sizes in `scripts/export.jsx:49-54`:
+**Buttons** — `src/Buttons.jsx` + sizes in `scripts/export.jsx:49-55`:
 
 ```js
 <Button label="Portfolio" w={200} i={0} />                    // primary=true = filled
-<Button label="LinkedIn" w={150} primary={false} i={1} />     // outline
+<Button label="5.1k Profile Views" w={260} primary={false} i={1} />  // outline, static count
+<Button label="LinkedIn" w={150} primary={false} i={2} />     // outline
 ```
 
-**Links** — `README.md:5-7` (button URLs) + `src/Quickstart.jsx:3` (`LINES` array). Keep them in sync.
+**Links** — `README.md:5-8` (button URLs) + `src/Quickstart.jsx:3` (`LINES` array). Keep them in sync.
 
 **Architecture nodes** — `src/Architecture.jsx:3`.
 
